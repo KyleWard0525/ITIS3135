@@ -1,3 +1,29 @@
+/* PAGE HEADER */
+.page-title {
+    text-align: center;
+}
+
+.page-subtitle {
+    text-align: center;
+}
+
+/* Navbar */
+.nav-bar {
+    display: block;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.nav-btn {
+    display: inline;
+    padding: 5px 10px 5px 10px;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: rgb(146, 197, 202);
+    border-color: grey;
+}
+
+/*  PAGE FOOTER */ 
 .page-footer {
     display: table;
     margin: 0 auto;
@@ -33,6 +59,19 @@
 }
 
 .validator {
-    margin-top: 5%;
+    margin-top: 8%;
     float: right;
+}
+
+/* Section styling */
+.section-title {
+    text-align: center;
+}
+
+.section-divider {
+    width: 30%;
+}
+
+a:visited {
+    text-decoration: none;
 }
