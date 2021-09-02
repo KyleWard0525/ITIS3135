@@ -19,8 +19,12 @@
     padding: 5px 10px 5px 10px;
     border-style: solid;
     border-radius: 3px;
-    background-color: rgb(146, 197, 202);
     border-color: grey;
+}
+
+/*  PAGE BODY   */
+body {
+    font-family:'Courier New', Courier, monospace;
 }
 
 /*  PAGE FOOTER */ 
@@ -39,6 +43,8 @@
 /*  Footer links  */
 .footer-links {
     display: inline-flex;
+    float: left;
+    margin-left: 20%;
 }
 
 .top-link {
@@ -47,14 +53,15 @@
 
 .footer-links h1 {
     display: inline;
-    margin-top: 19%;
+    margin-top: 15%;
+    margin-right: 10%;
     float: center;
 }
 
 .footer-links div {
     display: inline;
     margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 5%;
     margin-right: 15%;
 }
 
