@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.page-body {
+    width: 100%;
+}
+
 /* Navbar */
 .nav-bar {
     display: block;
@@ -20,10 +24,28 @@
     border-style: solid;
     border-radius: 3px;
     border-color: grey;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.active {
+    background-color:rgb(105, 44, 155);
+    color: white;
+}
+
+a:hover {
+    background-color: rgb(144, 52, 231);
+    color: rgb(231, 218, 218);
+}
+
+a:visited {
+    text-decoration: none;
+
 }
 
 /*  PAGE BODY   */
 body {
+    width: 100%;
     font-family:'Courier New', Courier, monospace;
 }
 
@@ -37,13 +59,14 @@ body {
     border-color: black;
     width: 100%;
     height: 10%;
-    position: static;
+    position: sticky;
 }
 
 /*  Footer links  */
 .footer-links {
     display: inline-flex;
     float: left;
+    margin-left: 10%;
 }
 
 .top-link {
@@ -52,14 +75,13 @@ body {
 
 .footer-links h1 {
     display: inline;
-    margin-top: 15%;
+
     margin-right: 10%;
     float: center;
 }
 
 .footer-links div {
     display: inline;
-    margin-top: 10%;
     margin-left: 5%;
     margin-right: 15%;
 }
@@ -80,4 +102,72 @@ body {
 
 a:visited {
     text-decoration: none;
+}
+
+/* Table Styling */
+.employee-table {
+    border-collapse: collapse;
+    margin-left: 15%;
+    width: 70%;
+    height: 20%;
+}
+
+.table-header {
+    text-align: center;
+}
+
+.table-title {
+    text-align: center;
+}
+
+.no-txt-wrap {
+    white-space: nowrap;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.salary {
+    color: rgb(21, 182, 21);
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.707);
+}
+
+th, td
+{
+	border: 1px solid black;
+	padding: .2em 1em .2em .5em;
+	vertical-align: middle;
+}
+
+thead
+{
+	background-color: rgb(105, 44, 155);
+}
+
+tbody tr:nth-child(odd) td
+{
+	background-color: rgb(169, 66, 253);
+}
+
+th.lbl-wages {
+    padding-right: 16%;
+}
+
+/* Figure styling */
+.figcap {
+    float: left;
+    width: 40%;
+    text-align: left;
+    font-weight: bolder;
+    background-color:rgba(0, 0, 0, 0.904);
+    border-style: solid;
+    border-radius: 1px;
+    border-top: 0px;
+    border-color: rgb(169, 66, 253);
+    margin-left: 15%;
+    padding-left: 1%;
+    color: white;
 }
