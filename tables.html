@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>kward60 ITIS3135 Tables</title>
+        <meta name="description" content="Tabular information">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/design.css">
+    </head>
+
+    <body>
+        
+        <div id="page-header">
+            <h1 class="page-title">Kyle Ward: ITIS 3135</h1>
+            <h4 class="page-subtitle">Web App Design and Development</h4>
+            <br />
+
+            <!-- Navigation bar -->
+            <nav class="nav-bar">
+                <label for="intro"><a id="intro" class="nav-btn" href="index.html">Introduction</a></label>
+                <label for="employees"><a id="employees" class="nav-btn active" href="tables.html">Employee Information</a></label>
+            </nav>
+            <hr>
+
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <!--    Main page content   -->
+        <div id="page-body">
+            <h2 class="section-title"><b>Tabular Employment Data</b></h2>
+            
+            <hr class="section-divider">
+
+            <br />
+            <br />
+            <br />
+
+
+            <h3 class="txt-center">Employee Information (Simple)</h3>
+            
+            <!-- Employee Information Table -->
+            <table class="employee-table">
+                <!-- Table Headers -->
+                <thead>
+                    <tr>
+                        <th class="table-header">Name</th>
+                        <th class="table-header">Email</th>
+                        <th class="table-header">Position</th>
+                        <th class="no-txt-wrap txt-center">Years of Service</th>
+                    </tr>
+                </thead>
+
+                <!-- Body of the table -->
+                <tbody class="txt-center">
+                    <tr class="no-txt-wrap">
+                        <td>Michael Mutex</td>
+                        <td>mmutex@kwardtech.com</td>
+                        <td >Lead Graphic Designer</td>
+                        <td>12</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tracy Threadripper</td>
+                        <td>threadripper@kwardtech.com</td>
+                        <td>Senior Hardware Design Engineer</td>
+                        <td>15</td>
+                    </tr>
+
+                    <tr>
+                        <td>Colin Hypercore</td>
+                        <td>chypercore@kwaretech.com</td>
+                        <td>Integration Engineer</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alita Vram</td>
+                        <td>alvram@kwardtech.com</td>
+                        <td>Graphic Designer</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td>Brad Chadington</td>
+                        <td>bradchad@kwardtech.com</td>
+                        <td>On-Call Hype Man</td>
+                        <td>¯\_(ツ)_/¯    He was here when we got here</td>
+                    </tr>
+
+                    <tr>
+                        <td>Doug Dimmadome</td>
+                        <td>dougdimmadomeownerofthedimmsdaledimmadome@kwardtech.com</td>
+                        <td>Owner of the Dimmsdale Dimmadome</td>
+                        <td>Since the dawn of Time</td>
+                    </tr>
+
+                    <tr>
+                        <td>Suzan Ciešanas</td>
+                        <td>suzanc@kwardtech.com</td>
+                        <td>Head of Foreign Affairs</td>
+                        <td>8</td>
+                    </tr>
+
+                    <tr>
+                        <td>Julius Caesar</td>
+                        <td>jcaesar1@kwardtech.com</td>
+                        <td>Penetration Tester</td>
+                        <td>55</td>
+                    </tr>
+
+                    <tr>
+                        <td>Stephanie Stegonagraphy</td>
+                        <td>stephstego@kwardtech.com</td>
+                        <td>Head of Security</td>
+                        <td>31</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <br />
+            <br />
+
+            <h3 class="txt-center">Employee Information (Complex)</h3>
+            
+            <figure>
+            <!-- Employee Information Table -->
+            <table class="employee-table">
+                <!-- Table Headers -->
+                <thead>
+                    <tr>
+                        <th class="table-header">Department</th>
+                        <th class="table-header">Name</th>
+                        <th class="table-header">Email</th>
+                        <th class="table-header">Position</th>
+                        <th class="txt-center">Years of Service</th>
+                        <th class="table-header">Monthly Salary</th>
+                    </tr>
+                </thead>
+
+                <!-- Body of the table -->
+                <tbody>
+
+                    <!-- Design Team -->
+                    <tr>
+                        <td rowspan="2">Design</td>
+                        <td>Michael Mutex</td>
+                        <td class="txt-center">mmutex@kwardtech.com</td>
+                        <td>Lead Graphic Designer</td>
+                        <td>12</td>
+                        <td class="salary">$15,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alita Vram</td>
+                        <td class="txt-center">alvram@kwardtech.com</td>
+                        <td>Graphic Designer</td>
+                        <td>1</td>
+                        <td class="salary">$8,000</td>
+                    </tr>
+
+                    <!-- Engineering Team -->
+                    <tr>
+                        <td rowspan="3">Engineering</td>
+                        <td>Tracy Threadripper</td>
+                        <td class="txt-center">threadripper@kwardtech.com</td>
+                        <td>Senior Hardware Design Engineer</td>
+                        <td>15</td>
+                        <td class="salary">$22,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Colin Hypercore</td>
+                        <td class="txt-center">chypercore@kwaretech.com</td>
+                        <td>Integration Engineer</td>
+                        <td>3</td>
+                        <td class="salary">$10,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Julius Caesar</td>
+                        <td class="txt-center">jcaesar1@kwardtech.com</td>
+                        <td>Penetration Tester</td>
+                        <td>55</td>
+                        <td class="salary">$9,750</td>
+                    </tr>
+                    
+
+                    <!-- HR Team -->
+                    <tr>
+                        <td rowspan="2">Human Resources</td>
+                        <td>Suzan Ciešanas</td>
+                        <td class="txt-center">suzanc@kwardtech.com</td>
+                        <td>Head of Foreign Affairs</td>
+                        <td>8</td>
+                        <td class="salary">$6,500</td>
+                    </tr>
+
+                    <tr>
+                        <td>Stephanie Stegonagraphy</td>
+                        <td class="txt-center">stephstego@kwardtech.com</td>
+                        <td>Head of Security</td>
+                        <td>31</td>
+                        <td class="salary">$11,000</td>
+                    </tr>
+
+
+                    <!-- Investors -->
+                    <tr>
+                        <td>Investor(s)</td>
+                        <td>Doug Dimmadome</td>
+                        <td>dougdimmadomeownerofthedimmsdaledimmadome@kwardtech.com</td>
+                        <td>Owner of the Dimmsdale Dimmadome / <i><b>Investor</b></i></td>
+                        <td>Since the dawn of Time</td>
+                        <td class="salary no-txt-wrap">$5,000 - $50,000</td>
+                    </tr>
+
+
+                    <!-- Brad -->
+                    <tr>
+                        <td>Brad</td>
+                        <td>Brad Chadington</td>
+                        <td class="txt-center">bradchad@kwardtech.com</td>
+                        <td>On-Call Hype Man</td>
+                        <td>¯\_(ツ)_/¯    He was here when we got here</td>
+                        <td class="salary">Money is useless. Brad is omnipotent.</td>
+                    </tr>
+
+                    <!-- Total Years -->
+                    <th colspan="4">Total Years of Service
+                        <td class="no-txt-wrap" style="font-weight: bold; font-style: italic;">125 years (± ∞)</td>
+                    </th>
+
+                    <tr></tr>
+
+                    <!-- Total monthly salary pay -->
+                    <th colspan="5" class="lbl-wages"> Total Monthly Wages
+                        <td class="no-txt-wrap salary">$87,250 - $132,250</td>
+                    </th>
+
+                </tbody>
+
+            </table>
+
+            <figcaption class="figcap"><i>Figure 1: Detailed employee information table</i></figcaption>
+        </figure>
+
+
+        </div>  
+
+            <!-- Footer -->
+            <footer class="page-footer">
+                <br />
+                <p><b><i>Created by: Kyle Ward</b></i></p>
+                
+                <a href="#page-header" class="top-link">Back to Top</a>
+
+                <br />
+                <br />
+
+                <!-- External links -->
+                <div class="footer-links">
+                    <!-- GitHub -->
+                    <div class="github-link">
+                        <a href="https://www.github.com/KyleWard0525" target="_blank">
+                        <h4><i class="icon-github-sign icon-3x"></i>GitHub</h4>
+                        </a>
+                    </div>
+
+                    <h1> || </h1>
+
+                    <!-- LinkedIn -->
+                    <div class="linkedin-link">
+                        <a href="https://www.linkedin.com/in/kyle-ward-b11786192/" target="_blank">
+                        <h4><i class="icon-linkedin-sign icon-3x"></i>Linkedin</h4>
+                        </a>
+                    </div>
+
+                    <h1> || </h1>
+
+                    <!-- Code Camp -->
+                    <div class="codecamp-link">
+                        <a href="https://www.freecodecamp.org/kward60" target="_blank">
+                        <h4><i class="icon-code icon-2x"></i>CodeCamp</h4>
+                        </a>
+                    </div>
+
+                    <h1> || </h1>
+
+                    <!-- Github Pages -->
+                    <div class="github-pages-link">
+                        <a href="https://kyleward0525.github.io/ITIS3135" target="_blank">
+                        <h4><i class="icon-github-alt icon-2x"></i>GitHub Pages</h4>
+                        </a>
+                    </div>
+
+                    <h1> || </h1>
+
+                    <!-- UNCC Web page -->
+                    <div class="uncc-pages-link">
+                        <a href="https://webpages.uncc.edu/kward60" target="_blank">
+                        <h4><img src="images/unc-charlotte-logo.png" width="70" height="60"></i>UNCC Pages</h4>
+                        </a>
+                    </div>
+
+                </div>
+
+            </footer>
+
+            <!-- Validators ? -->
+            <a href="https://validator.w3.org/check?uri=referer" class="validator">
+                <img src="https://dvonbri1.github.io/itis3135/images/button-valid-html5.gif" width="85" height="30" alt="HTML validator">
+            </a>
+
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" class="validator">
+                <img src="https://dvonbri1.github.io/itis3135/images/button-valid-css.gif" width="85" height="30" alt="CSS validator">
+            </a>
+
+
+    </body>
+
+</html>
