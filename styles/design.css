@@ -1,4 +1,11 @@
-
+/* Create color pallete for entire site */
+:root {
+    --primary-color: #0a0a0a;
+    --secondary-color: #df0d03;
+    --tertiary-color: #f7f9fd;
+    --accent-color: #629ac8;
+    font-family: 'Merriweather', serif;
+}
 
 /* PAGE HEADER */
 .page-title {
@@ -48,7 +55,6 @@ a:visited {
 /*  PAGE BODY   */
 body {
     width: 100%;
-    font-family:'Courier New', Courier, monospace;
 }
 
 /*  PAGE FOOTER */ 
