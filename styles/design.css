@@ -35,6 +35,12 @@
     border-color: grey;
     margin-left: 2%;
     margin-right: 2%;
+    text-decoration: none;
+}
+
+a:visited :not(.active){
+    text-decoration: none;
+    color: black;
 }
 
 .active {
@@ -47,10 +53,7 @@ a:hover {
     color: rgb(231, 218, 218);
 }
 
-a:visited {
-    text-decoration: none;
 
-}
 
 /*  PAGE BODY   */
 body {
