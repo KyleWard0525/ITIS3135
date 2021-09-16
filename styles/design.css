@@ -51,6 +51,7 @@ a:visited :not(.active){
 a:hover {
     background-color: rgb(144, 52, 231);
     color: rgb(231, 218, 218);
+    cursor: pointer;
 }
 
 
@@ -100,15 +101,6 @@ body {
 .validator {
     margin-top: 0.25em;
     float: right;
-}
-
-/* Section styling */
-.section-title {
-    text-align: center;
-}
-
-.section-divider {
-    width: 30%;
 }
 
 a:visited {
@@ -251,4 +243,123 @@ hr.px30 {
 hr.px50 {
     height: 50px;
     visibility: hidden;
+}
+
+hr.px75 {
+    height: 75px;
+    visibility: hidden;
+}
+
+hr.px100 {
+    height: 100px;
+    visibility: hidden;
+}
+
+hr.px120 {
+    height: 120px;
+    visibility: hidden;
+}
+
+hr.px200 {
+    height: 200px;
+    visibility: hidden;
+}
+
+hr.px215 {
+    height: 215px;
+    visibility: hidden;
+}
+
+/* Section Styling */
+.section-title {
+    text-align: center;
+}
+
+.section-divider {
+    width: 30%;
+}
+
+.page-sections {
+    display: flex;
+    width: 100%;
+}
+
+section {
+    display: block;
+    
+}
+
+.subsection {
+    width: 40%;
+    line-height: 2;
+    text-align: justify;
+}
+
+.subsection-divider-pct55 {
+    width: 55%;
+}
+
+.align-left {
+    display: inline;
+    margin-left: 5%;
+    float: left;
+    text-align: left;
+    overflow: hidden;
+}
+
+.align-right {
+    display: inline;
+    margin-right: 5%;
+    float: right;
+    text-align: justify;
+}
+
+
+
+.ext-link {
+    color: black;
+}
+
+.ext-link:hover {
+    background-color: black;
+    color: white;
+}
+
+/* List Styling */
+.subsection-li-title {
+    font-size:larger;
+}
+
+/* Text Styling */
+.txt18px {
+    font-size: 18px;
+}
+
+.txt24px {
+    font-size: 24px;
+}
+
+.txt-just {
+    text-align: justify;
+}
+
+/* Spacing styling */
+.m-left-pct5 {
+    margin-left: 5%;
+}
+
+.m-left-pct10 {
+    margin-left: 10%;
+}
+
+.m-left-pct20 {
+    margin-left: 20%;
+}
+
+.m-right-pct5 {
+    margin-right: 5%;
+}
+
+.m-right-pct10 {
+    margin-right: 10%;
 }
