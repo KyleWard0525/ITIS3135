@@ -23,8 +23,8 @@
 /* NAVBAR */
 .nav-bar {
     display: block;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 .nav-btn {
@@ -36,6 +36,12 @@
     margin-left: 2%;
     margin-right: 2%;
     text-decoration: none;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    background-color: rgb(144, 52, 231);
+    color: rgb(231, 218, 218);
 }
 
 a:visited :not(.active){
@@ -286,7 +292,6 @@ hr.px215 {
 
 section {
     display: block;
-    
 }
 
 .subsection {
@@ -314,7 +319,11 @@ section {
     text-align: justify;
 }
 
-
+.align-center {
+    display: inline;
+    float: center;
+    text-align: justify;
+}
 
 .ext-link {
     color: black;
@@ -331,6 +340,10 @@ section {
 }
 
 /* Text Styling */
+.txt16px {
+    font-size: 18px;
+}
+
 .txt18px {
     font-size: 18px;
 }
@@ -354,6 +367,10 @@ section {
 
 .m-left-pct20 {
     margin-left: 20%;
+}
+
+.m-left-pct30 {
+    margin-left: 30%;
 }
 
 .m-right-pct5 {
