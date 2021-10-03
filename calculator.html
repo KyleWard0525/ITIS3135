@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Calculator</title>
+        <meta name="description" content="Web App for ITIS 3135">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/design.css">
+        <script type="text/javascript" src="./scripts/calculator.js"></script>
+    </head>
+
+    <body>
+        
+        <div id="page-header">
+            <h1 class="page-title">Kyle Ward: ITIS 3135</h1>
+            <h4 class="page-subtitle">Web App Design and Development</h4>
+            <br />
+
+            <!-- Navigation bar -->
+            <nav class="nav-bar">
+                <label for="intro"><a id="intro" class="nav-btn" href="index.html">Introduction</a></label>
+                <label for="employees"><a id="employees" class="nav-btn" href="tables.html">Employee Information</a></label>
+                <label for="newsletter"><a id="newsletter" class="nav-btn" href="newsletter.html">Newsletter</a></label>
+                <label for="web-evals"><a id="web-evals" class="nav-btn" href="website-evaluations.html">Website Evaluations</a></label>
+                <label for="web-scripts"><a id="web-scripts" class="nav-btn" href="first-scripts.html">JavaScript Demo</a></label>
+                <label for="polygons"><a id="polygons" class="nav-btn" href="polygons.html">Polygons!</a></label>
+                <label for="calc"><a id="calc" class="nav-btn active" href="calculator.html">Calculator</a></label>
+            </nav>
+            <hr />
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <!-- Main content -->
+
+        <main id="page-body">
+            <h2 class="section-title"><b>Calculator</b></h2>
+            <hr class="section-divider" />
+
+            <hr class="px100"/>
+
+            <!-- Calculator -->
+            <table class="calculator">
+
+                <!-- Ouput -->
+                <tr >
+                    <td colspan="4"><input type="text" id="output" disabled></td>
+                </tr>
+
+                <!-- Row 1 -->
+                <tr>
+                    <td><input class="calcBtn" type="button" id="0" value="0" onclick="appendToOutput('0')"></td>
+                    <td><input class="calcBtn" type="button" id="1" value="1" onclick="appendToOutput('1')"></td>
+                    <td><input class="calcBtn" type="button" id="2" value="2" onclick="appendToOutput('2')"></td>
+                    <td><input class="calcBtn" type="button" id="divide" value="/" onclick="appendToOutput('/')"></td>
+                </tr>
+
+                <!-- Row 2 -->
+                <tr>
+                    <td><input class="calcBtn" type="button" id="3" value="3" onclick="appendToOutput('3')"></td>
+                    <td><input class="calcBtn" type="button" id="4" value="4" onclick="appendToOutput('4')"></td>
+                    <td><input class="calcBtn" type="button" id="5" value="5" onclick="appendToOutput('5')"></td>
+                    <td><input class="calcBtn" type="button" id="multiply" value="*" onclick="appendToOutput('*')"></td>
+                </tr>
+
+                <!-- Row 3 -->
+                <tr>
+                    <td><input class="calcBtn" type="button" id="6" value="6" onclick="appendToOutput('6')"></td>
+                    <td><input class="calcBtn" type="button" id="7" value="7" onclick="appendToOutput('7')"></td>
+                    <td><input class="calcBtn" type="button" id="8" value="8" onclick="appendToOutput('8')"></td>
+                    <td><input class="calcBtn" type="button" id="minus" value="-" onclick="appendToOutput('-')"></td>
+                </tr>
+
+                <!-- Row 4 -->
+                <tr>
+                    <td><input class="calcBtn" type="button" id="9" value="9" onclick="appendToOutput('9')"></td>
+                    <td><input class="calcBtn" type="button" id="period" value="." onclick="appendToOutput('.')"></td>
+                    <td><input class="calcBtn" type="button" id="equals" value="=" onclick="compute()"></td>
+                    <td><input class="calcBtn" type="button" id="plus" value="+" onclick="appendToOutput('+')"></td>
+                </tr>
+
+                <!-- Clear Button -->
+                <tr>
+                    <td colspan="4"><input class="calcBtn" type="button" id="clear" value="Clear" onclick="clearOutput('clearDebug=true')"></td>
+                </tr>
+
+            </table>
+
+            <hr class="px100">
+            <h4 class="debugMsg" id="debug"></h4>
+
+        </main>
+
+
+
+        <hr class="px200">
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <br />
+            <p><b><i>Created by: Kyle Ward</b></i></p>
+            
+            <a href="#page-header" class="top-link">Back to Top</a>
+
+            <br />
+            <br />
+
+            <!-- External links -->
+            <div class="footer-links">
+                <!-- GitHub -->
+                <div class="github-link">
+                    <a href="https://www.github.com/KyleWard0525" target="_blank">
+                    <h4><i class="icon-github-sign icon-3x"></i>GitHub</h4>
+                    </a>
+                </div>
+
+                <h1> || </h1>
+
+                <!-- LinkedIn -->
+                <div class="linkedin-link">
+                    <a href="https://www.linkedin.com/in/kyle-ward-b11786192/" target="_blank">
+                    <h4><i class="icon-linkedin-sign icon-3x"></i>Linkedin</h4>
+                    </a>
+                </div>
+
+                <h1> || </h1>
+
+                <!-- Code Camp -->
+                <div class="codecamp-link">
+                    <a href="https://www.freecodecamp.org/kward60" target="_blank">
+                    <h4><i class="icon-code icon-2x"></i>CodeCamp</h4>
+                    </a>
+                </div>
+
+                <h1> || </h1>
+
+                <!-- Github Pages -->
+                <div class="github-pages-link">
+                    <a href="https://kyleward0525.github.io/ITIS3135" target="_blank">
+                    <h4><i class="icon-github-alt icon-2x"></i>GitHub Pages</h4>
+                    </a>
+                </div>
+
+                <h1> || </h1>
+
+                <!-- UNCC Web page -->
+                <div class="uncc-pages-link">
+                    <a href="https://webpages.uncc.edu/kward60" target="_blank">
+                    <h4><img src="images/unc-charlotte-logo.png" width="70" height="60"></i>UNCC Pages</h4>
+                    </a>
+                </div>
+
+
+                </div>
+
+        </footer>
+
+        <!-- Validators ? -->
+        <a href="https://validator.w3.org/check?uri=referer" class="validator">
+            <img src="https://dvonbri1.github.io/itis3135/images/button-valid-html5.gif" width="85" height="30" alt="HTML validator">
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" class="validator">
+            <img src="https://dvonbri1.github.io/itis3135/images/button-valid-css.gif" width="85" height="30" alt="CSS validator">
+        </a>
+
+
+    </body>
+
+</html>
