@@ -15,7 +15,7 @@
 
 </head>
 
-<body onload="loadStaffMenu()">
+<body onload="onLoad()">
 
     <div id="page-header">
         <h1 class="page-title">Kyle Ward: ITIS 3135</h1>
@@ -49,7 +49,7 @@
 
         <!-- Data entry/selection section -->
         <div class="section">
-            <form class="input-form" action='' method="POST">
+            <form class="input-form" onsubmit="return false" method="POST">
                 <br>
                 <div class="form-input">
                     <hr class="px5">
@@ -82,15 +82,34 @@
                     <hr class="px50">
 
                     
-                    &emsp;&emsp;&emsp;&emsp;<input type="submit" value="Add" class="submit-btn" onclick="">&emsp;&emsp;&emsp;
-                    <input type="submit" value="Display Results" class="submit-btn" onclick="">&emsp;&emsp;&emsp;
-                    <input type="submit" value="Display Table" class="submit-btn" onclick="">
+                    &emsp;&emsp;&emsp;&emsp;<input type="submit" value="Add" id="add-btn" class="submit-btn" onclick="add()">&emsp;&emsp;&emsp;
+                    <input type="submit" value="Display Results" id="result-btn" class="submit-btn" onclick="displayResults()">&emsp;&emsp;&emsp;
+                    <input type="submit" value="Display Table" id="table-btn" class="submit-btn" onclick="displayTable()">
 
                     <hr class="px30">
-                    <p></p>
+
+                    <!-- Inform user if add was successful -->
+                    <div id="status"></div>
+                    <hr class="px30">
+                
                 </div>
             </form>
         </div>
+
+            <hr class="px30">
+
+            <!-- Result section -->
+            <div id="results" class="txt-center">           
+            </div>
+
+            <hr class="px50">
+            
+            <!-- Table -->
+            <div id='table-title'></div>
+            <table class="employee-table" id="results_table">
+            </table>
+        
+        
 
 
 
