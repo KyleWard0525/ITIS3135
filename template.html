@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>JavaScript Demo</title>
+        <title>Template</title>
         <meta name="description" content="Web App for ITIS 3135">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,10 +10,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/design.css">
-        <script type="text/javascript" src="./scripts/jsdemo.js"></script>
+
     </head>
 
-    <body onload="renderUserSection()">
+    <body>
         
         <div id="page-header">
             <h1 class="page-title">Kyle Ward: ITIS 3135</h1>
@@ -22,14 +22,13 @@
 
             <!-- Navigation bar -->
             <nav class="nav-bar">
-                <label for="intro"><a id="intro" class="nav-btn" href="index.html">Introduction</a></label>
+                <label for="intro"><a id="intro" class="nav-btn active" href="index.html">Introduction</a></label>
                 <label for="employees"><a id="employees" class="nav-btn" href="tables.html">Employee Information</a></label>
                 <label for="newsletter"><a id="newsletter" class="nav-btn" href="newsletter.html">Newsletter</a></label>
                 <label for="web-evals"><a id="web-evals" class="nav-btn" href="website-evaluations.html">Website Evaluations</a></label>
-                <label for="web-scripts"><a id="web-scripts" class="nav-btn active" href="first-scripts.html">JavaScript Demo</a></label>
+                <label for="web-scripts"><a id="web-scripts" class="nav-btn" href="first-scripts.html">JavaScript Demo</a></label>
                 <label for="polygons"><a id="polygons" class="nav-btn" href="polygons.html">Polygons!</a></label>
                 <label for="calc"><a id="calc" class="nav-btn" href="calculator.html">Calculator</a></label>
-                <label for="arrays"><a id="arrays" class="nav-btn" href="arrays.html">Arrays</a></label>
             </nav>
             <hr />
 
@@ -39,31 +38,11 @@
         <br />
         <br />
 
-        <main id="page-body" >
-            <h2 class="section-title"><b>JavaScript Demo</b></h2>
+        <main id="page-body">
+            <h2 class="section-title"><b>Section Title</b></h2>
+            
             <hr class="section-divider" />
-
-            <!-- This section is autofilled by JavaScript on page load -->
-            <div id="user-info-section"></div>
-
-            <hr class="px100">
-
-            <!-- Random buttons -->
-            <section id="rand-btns">
-                <input type="button" id="rand-num" class="nav-btn txt18px m-left-pct20" onclick="randNum()" value="Get a random number!">
-                <input type="button" id="rand-doge" class="nav-btn txt18px m-left-pct5" onclick="downloadDoge()" value="Doge!">
-                <input type="button" id="rand-happy" class="nav-btn txt18px m-left-pct5" onclick="happy()" value=": )">
-                <input type="button" id="rand-rate" class="nav-btn txt18px m-left-pct5" onclick="ratePage()" value="Rate this webpage!">
-                <input type="button" id="rand-pain" class="nav-btn txt18px m-left-pct5" onclick="colors()" value="COLORS :D!">
-            </section>
-
-            <hr class="px30">
-
-            <!-- Section for displaying results from button press -->
-            <div id="result-section"></div>
-
         </main>
-
         <hr class="px200">
 
         <!-- Footer -->
@@ -135,7 +114,7 @@
             <img src="https://dvonbri1.github.io/itis3135/images/button-valid-css.gif" width="85" height="30" alt="CSS validator">
         </a>
 
-        <a href="./components/Doge.rar" id="download-doge" download></a>
-
     </body>
 </html>
+
+    
