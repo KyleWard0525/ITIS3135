@@ -23,8 +23,8 @@
 /* NAVBAR */
 .nav-bar {
     display: block;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .nav-btn {
@@ -192,6 +192,15 @@ th.lbl-wages {
     margin-left: 25%;
 }
 
+.input-form {
+    float: center;
+    text-align: center;
+    background-color: rgb(95, 13, 172);
+    width: 50%;
+    margin-left: 25%;
+    color: whitesmoke;
+}
+
 .form-input {
     font-size: 16px;
     background-color: blueviolet;
@@ -222,6 +231,12 @@ th.lbl-wages {
     cursor:pointer;
     background-color: rgb(58, 0, 112);
     color: rgb(231, 218, 218);
+}
+
+.form-input input[type="submit"]:disabled {
+    cursor:default;
+    background-color: rgba(58, 0, 112, 0.5);
+    color: rgb(51, 51, 51);
 }
 
 
@@ -302,6 +317,10 @@ section {
 
 .subsection-divider-pct55 {
     width: 55%;
+}
+
+.subsection-divider-pct35 {
+    width: 35%;
 }
 
 .align-left {
@@ -448,4 +467,15 @@ section {
     color: red;
     text-align: center;
     font-weight: bolder;
+}
+
+/* Text shadow styling */
+.txt-shadow-005 {
+    text-shadow: 0px 0px 5px #0a0a0a ;
+}
+
+
+/* COLORS */
+.border-black {
+    border-color: black;
 }
