@@ -24,7 +24,7 @@
 .nav-bar {
     display: block;
     margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .nav-btn {
@@ -32,9 +32,9 @@
     padding: 5px 10px 5px 10px;
     border-style: solid;
     border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 5px;
     border-color: grey;
-    margin-left: 2%;
-    margin-right: 2%;
     text-decoration: none;
 }
 
@@ -206,7 +206,6 @@ th.lbl-wages {
     background-color: blueviolet;
     width: 90%;
     margin-left: 5%;
-    
 }
 
 .form-input h4 {
@@ -294,6 +293,7 @@ hr.px215 {
 /* Section Styling */
 .section-title {
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .section-divider {
@@ -321,6 +321,17 @@ section {
 
 .subsection-divider-pct35 {
     width: 35%;
+}
+
+.proj-section {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.client-section {
+    margin:unset;
 }
 
 .align-left {
@@ -357,6 +368,12 @@ section {
 .subsection-li-title {
     font-size:larger;
 }
+
+.desc-title {
+    font-size: 18px;
+    font-weight: 140;
+}
+
 
 /* Text Styling */
 .txt16px {
@@ -474,8 +491,33 @@ section {
     text-shadow: 0px 0px 5px #0a0a0a ;
 }
 
+.txt-shadow-001 {
+    text-shadow: 0px 0px 1px #0a0a0a ;
+}
+
 
 /* COLORS */
 .border-black {
     border-color: black;
 }
+
+/* STYLE BY ID */
+#app-title {
+    position: relative;
+    font-weight: 170;
+    font-size: 24px;
+    border-style: groove;
+    border-color:rgb(169, 66, 253);
+    border-radius: 3px;
+    padding: 10px;
+    border-width: 4px;
+    background-color: rgba(237,237,237,0.35);
+    box-shadow: inset;
+    text-align: center;
+}
+
+#client-info {
+    line-height: 2;
+    font-size: 22px;
+}
+
