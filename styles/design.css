@@ -521,3 +521,70 @@ section {
     font-size: 22px;
 }
 
+/* Styling for slide show */
+.slideshow {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    width: 70%;
+    height: 65%;
+    margin: auto;
+    background-color: rgb(125, 208, 211);
+    padding: 50px;
+    overflow-x: auto;
+    overflow-y:unset;
+}
+
+.slide {
+    display: none;
+}
+
+a.prev-btn {
+    align-self: center;
+    padding: 10rem 2rem 10rem 2rem;
+    margin-right: 3%;
+    border-color:antiquewhite;
+    border-style:dashed;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+a.next-btn {
+    align-items: stretch;
+    align-self: center;
+    padding: 10rem 2rem 10rem 2rem;
+    margin-left: 3%;
+    border-color:antiquewhite;
+    border-style:dashed;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+a.next-btn:hover, a.prev-btn:hover {
+    opacity: 70%;
+    border-style: solid;
+}
+
+#slide-img {
+    border-style: solid;
+    border-color: antiquewhite;
+    border-radius: 1px;
+    box-shadow: 0px 0px 1px 2px #0a0a0a;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 600px;
+}
+
+#slide-cap {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#slide-num {
+    padding-bottom: 2%;
+    font-size: 24px;
+    font-style: italic;
+}
