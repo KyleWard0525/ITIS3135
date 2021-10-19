@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Slideshow</title>
+        <meta name="description" content="Web App for ITIS 3135">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/design.css">
+        <link rel="preload" href="images/slideshow/gmonitor1.12.jpg" as="image"> <!-- Preload large image file -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>  <!-- jQuery-->
+        <script src="scripts/slideshow.js"></script>
+    </head>
+
+    <body>
+        
+        <div id="page-header">
+            <h1 class="page-title">Kyle Ward: ITIS 3135</h1>
+            <h4 class="page-subtitle">Web App Design and Development</h4>
+            <br />
+
+            <!-- Navigation bar -->
+            <nav class="nav-bar">
+                <label for="intro"><a id="intro" class="nav-btn" href="index.html">Introduction</a></label>
+                <label for="employees"><a id="employees" class="nav-btn" href="tables.html">Employee Information</a></label>
+                <label for="newsletter"><a id="newsletter" class="nav-btn" href="newsletter.html">Newsletter</a></label>
+                <label for="web-evals"><a id="web-evals" class="nav-btn" href="website-evaluations.html">Website Evaluations</a></label>
+                <label for="web-scripts"><a id="web-scripts" class="nav-btn" href="first-scripts.html">JavaScript Demo</a></label>
+                <label for="polygons"><a id="polygons" class="nav-btn" href="polygons.html">Polygons</a></label>
+                <label for="calc"><a id="calc" class="nav-btn" href="calculator.html">Calculator</a></label>
+                <label for="arrays"><a id="arrays" class="nav-btn" href="arrays.html">Arrays</a></label>
+                <label for="proj"><a id="proj" class="nav-btn" href="project.html">Project Design</a></label>
+                <label for="slides"><a id="slides" class="nav-btn active" href="slideshow.html">Slideshow</a></label>
+            </nav>
+            <hr />
+
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <!-- Main page content -->
+        <main id="page-body">
+            <h2 class="section-title"><b>Slideshow of Interests</b></h2>
+            <hr class="section-divider" />
+
+            <hr class="px30">
+
+            <!-- Slideshow -->
+            <div class="slideshow">
+                <a class="prev-btn" onclick="previous()"><   Prev Slide</a>
+                <div class="slide">
+                    <div id="slide-num">Slide num</div>
+                    <img src="#" id="slide-img">
+                    <div id="slide-cap">Slide cap</div>
+                </div>
+                <a class="next-btn" onclick="next()">Next Slide  ></a>
+            </div>
+
+        </main>
+        <hr class="px200">
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <br />
+            <p><b><i>Created by: Kyle Ward</b></i></p>
+            
+            <a href="#page-header" class="top-link">Back to Top</a>
+
+            <br />
+            <br />
+
+            <!-- External links -->
+            <div class="footer-links">
+                <!-- GitHub -->
+                <div class="github-link">
+                    <a href="https://www.github.com/KyleWard0525" target="_blank">
+                    <h4><i class="icon-github-sign icon-3x"></i>GitHub</h4>
+                    </a>
+                </div>
+
+                <h1> || </h1>
+
+                <!-- LinkedIn -->
+                <div class="linkedin-link">
+                    <a href="https://www.linkedin.com/in/kyle-ward-b11786192/" target="_blank">
+                    <h4><i class="icon-linkedin-sign icon-3x"></i>Linkedin</h4>
+                    </a>
+                </div>
+
+                <h1> || </h1>
+
+                <!-- Code Camp -->
+                <div class="codecamp-link">
+                    <a href="https://www.freecodecamp.org/kward60" target="_blank">
+                    <h4><i class="icon-code icon-2x"></i>CodeCamp</h4>
+                    </a>
+                </div>
+
+                <h1> || </h1>
+
+                <!-- Github Pages -->
+                <div class="github-pages-link">
+                    <a href="https://kyleward0525.github.io/ITIS3135" target="_blank">
+                    <h4><i class="icon-github-alt icon-2x"></i>GitHub Pages</h4>
+                    </a>
+                </div>
+
+                <h1> || </h1>
+
+                <!-- UNCC Web page -->
+                <div class="uncc-pages-link">
+                    <a href="https://webpages.uncc.edu/kward60" target="_blank">
+                    <h4><img src="images/unc-charlotte-logo.png" width="70" height="60"></i>UNCC Pages</h4>
+                    </a>
+                </div>
+
+
+                </div>
+
+        </footer>
+
+        <!-- Validators ? -->
+        <a href="https://validator.w3.org/check?uri=referer" class="validator">
+            <img src="https://dvonbri1.github.io/itis3135/images/button-valid-html5.gif" width="85" height="30" alt="HTML validator">
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" class="validator">
+            <img src="https://dvonbri1.github.io/itis3135/images/button-valid-css.gif" width="85" height="30" alt="CSS validator">
+        </a>
+
+    </body>
+</html>
+
+    
