@@ -588,3 +588,7 @@ a.next-btn:hover, a.prev-btn:hover {
     font-size: 24px;
     font-style: italic;
 }
+
+.clickable {
+    cursor: pointer;
+}
