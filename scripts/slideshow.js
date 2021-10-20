@@ -103,8 +103,24 @@ function displaySlide(name)
     $("#slide-img").attr("src", slides[name]['image']);  
     $("#slide-cap").text(slides[name]['caption']);
 
+    // 
+
     //  Fade slide back in
     $(".slide").show(350);
+}
+
+//  Open an image in another tab
+function openImage()
+{
+    // Create a copy of the img src
+    let img = new Image();
+    img.src = $("#slide-img").attr('src');
+
+    //  Create a new window and copy image to it
+    let w = window.open("", "_blank");
+    w.document.write(img.outerHTML);
+    w.document.close();
+    
 }
 
 // Automatic slide show
