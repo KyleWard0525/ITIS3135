@@ -63,6 +63,7 @@ a:hover {
 /* Remove default blue from all links */
 a {
     color: black;
+    text-decoration: none;
 }
 
 /*  PAGE BODY   */
@@ -94,6 +95,7 @@ body {
 
 .top-link {
     float: center;
+    text-decoration: underline;
 }
 
 .footer-links h1 {
@@ -113,6 +115,12 @@ body {
     margin-top: 10%;
     margin-right: 5px;
     padding: 5px;
+}
+
+.validator:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: darkgray;
 }
 
 a:visited {
