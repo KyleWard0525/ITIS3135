@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kyle Ward UNCC Webpage</title>
+        <meta name="description" content="Webpage for kward60">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/root.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/root.js"></script>
+        <script src="scripts/challenge.js"></script>
+    </head>
+
+    
+    
+    
+    <body onload="onLoad()">
+        <iframe src="components/IPutWayTooMuchEffortIn.mp3" allow="autoplay" id="intro-audio" hidden>
+            <audio id="player" preload="auto" src="components/IPutWayTooMuchEffortIn.mp3" autoplay controls="false"></audio>
+        </iframe>
+        <div class="bg-img"></div>
+        
+        <!-- Page Header -->
+        <header>
+            
+        </header>
+
+        <hr class="px300">
+
+        <!-- Main page content -->
+        <main>
+            <!-- Title display -->
+            <h1 id="page-title">Kyle Ward</h1>
+            <hr class="px20">
+            <h4 id="page-subtitle"><i>It's okay, I don't know what I'm doing either.</i></h4>
+
+            <hr class="px50">
+            
+            <!-- Button group for links -->
+            <div class="btn-container">
+                <a href="https://webpages.uncc.edu/kward60/itis3135/" target="_blank"><input type="button" id="btn-itis3135" class="btn-link" value="ITIS 3135 Website"></a>
+                <a href="https://github.com/KyleWard0525" target="_blank"><input type="button" id="btn-github" class="btn-link" value="GitHub"></a>
+                <a href="./components/KyleWardResume2021.pdf" class="btn-link" target="_blank" download="KyleWardResume2021.pdf">Resume</a>
+                <input type="button" class="btn-link" id="btn-begin" value="Up for a challenge?" onclick="beginChallenge()">
+            </div>
+
+        </main>
+
+        <hr class="px300">
+
+        <!-- Page footer -->
+        <footer>
+            
+        </footer>    
+
+    </body>
+
+    <p id="na"></p>
+</html>
