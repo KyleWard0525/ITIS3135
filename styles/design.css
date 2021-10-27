@@ -344,6 +344,15 @@ section {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.txt-subsection {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    line-height: 2;
+    margin: auto;
+    width: 45%;
+}
+
 .client-section {
     margin:unset;
 }
