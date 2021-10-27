@@ -6,11 +6,11 @@ function onLoad()
 {
     let mainFadeDelay = 3030;
 
-    $("main").hide();
+    
 
     $(window).ready(function() {
         // Fade in content
-        
+        $("main").hide();
         
         $("main").fadeIn(mainFadeDelay); 
     });
