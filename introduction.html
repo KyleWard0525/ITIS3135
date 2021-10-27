@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Newsletter</title>
-        <meta name="description" content="Newsletter Signup">
+        <title>Kyle Ward ITIS 3135 Introduction</title>
+        <meta name="description" content="Web App for ITIS 3135">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,11 +11,10 @@
         <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/design.css">
 
-
     </head>
 
     <body>
-
+        
         <header>
         <div id="page-header">
             <h1 class="page-title">Kyle Ward: ITIS 3135</h1>
@@ -25,9 +24,9 @@
             <!-- Navigation bar -->
             <nav class="nav-bar">
                 <a id="home" class="nav-btn" href="index.html">Home</a>
-                <a id="intro" class="nav-btn" href="introduction.html">Introduction</a>
+                <a id="intro" class="nav-btn active" href="introduction.html">Introduction</a>
                 <a id="employees" class="nav-btn" href="tables.html">Employee Information</a>
-                <a id="newsletter" class="nav-btn active" href="newsletter.html">Newsletter</a>
+                <a id="newsletter" class="nav-btn" href="newsletter.html">Newsletter</a>
                 <a id="web-evals" class="nav-btn" href="website-evaluations.html">Website Evaluations</a>
                 <a id="web-scripts" class="nav-btn" href="first-scripts.html">JavaScript Demo</a>
                 <a id="polygons" class="nav-btn" href="polygons.html">Polygons</a>
@@ -44,90 +43,73 @@
         <br />
         <br />
 
-        <!--    Main page content   -->
         <main id="page-body">
-            <h2 class="section-title"><b>Company Newsletter</b></h2>
+            <h2 class="section-title"><b>Introduction</b></h2>
             
-            <hr class="section-divider">
+            <hr class="section-divider" />
+
+            <!--    Information list (About Me)   -->
+            <ul>
+                    <li id="personal-bg">
+                        <h4>Personal Background:</h4>
+                        <p class="info-section">
+                            <!-- &emsp = Tab-->                    
+                            &emsp;I grew up in Greensboro, NC. I come from a family of authors, engineers, farmers, and medical professionals.
+                            Though I would like to consider myself intelligent like the rest of my family, the "self-preservation" gene
+                            seems to have skipped a generation.
+                            Most of my family likes casual and relaxing activities in their free time. I do not. I am an adrenaline junky
+                            with relatively minimal concern for my own safety.
+                            Because of this, I love doing dangerous things such as cliff jumping, racing, MMA, and all the cool parts of
+                            science you're not allowed to do in school.
+                        </p>
+                    </li>
+                    
+                    <li id="professional-bg">
+                        <h4>Professional Background:</h4>
+                        <p class="info-section">
+                            &emsp;I don't have a lot of industry experience but I have been working as a Software Engineer Intern at Toyota Racing
+                            Development for the past few months.
+                            Before that I worked for the University as a Software Developer during the Spring 2021 semester.
+                        </p>
+                    </li>
+                    
+                    <li id="academic-bg">
+                        <h4>Academic Background:</h4>
+                        <p class="info-section">
+                            &emsp;I went to Page High school in Greensboro as well as being dual-enrolled in the advanced technology program at
+                            Weaver Academy.
+                            This is where I found my passion for Computer Science and where I really began my career path.
+                            After falling in love with CS in my Junior year of high school, I began looking at colleges that offered good CS
+                            degrees.
+                            This is when I found Charlotte and the incredible program it has as one of, if not the best Computer Science
+                            schools in the state.
+                        </p>
+                    </li>
+                    
+                    <li id="software-bg">
+                        <h4>Software/Programming Background:</h4>
+                        <p class="info-section">
+                            &emsp;I have quite an extensive knowledge of programming and software development.
+                            I am proficient in C/C++, Java, and Python. I also have experience with JavaScript, HTML/CSS, ReactJS, C#,
+                            MS-DOS, VisualBasic, MATLAB, SQL, ARM, and VHDL.
+                            For details and project information, see the GitHub link below.
+                        </p>
+                    </li>
+                    
+                    <li id="story-bg">
+                        <h4>Something I always like to keep in mind:</h4>
+                        <p class="info-section">
+                            &emsp;One thing my grandfather told me that has helped me immensely in CS was: "A computer only does EXACTLY what you
+                            tell it to.
+                            Nothing more, nothing less.
+                            So if something isn't working correctly, it's because you told the computer to do the wrong thing".
+                        </p>
+                    </li>
+            </ul>
 
             <br />
-
-            <form class="signup-form" action="index.html" method="POST">
-                <hr class="px5">
-
-                <!-- Form title -->
-                <h3 class="txt-center" style="color:whitesmoke;">Sign up for our newsletter and never miss and update!</h3>
-                <br>
-
-                <!-- User input -->
-                <div class="form-input">
-                    <hr class="px5">
-
-                    <!-- Text boxes -->
-                    <label for="name">Full Name:&emsp;&emsp;&emsp;<input type="text" id="name" placeholder="John Doe" required></label>
-                    <hr class="px20">
-                    <label for="phone-num">Phone Number:&emsp;<input type="tel" id="phone-num" placeholder="555-555-5555" required></label>
-                    <hr class="px20">
-                    <label for="email">Email:&emsp;&emsp;&emsp;&emsp;&emsp;<input type="email" id="email" placeholder="jdoe@email.com" required></label>
-                    
-                    <hr class="px30">
-                    
-                    <!-- Checkboxes -->
-                    <div>
-                        <h4>* Please select your favorite animal(s):</h4>
-                        <hr class="px10">
-                        <label for="dog"><input type="checkbox" id="dog" value="dog" required>Dog</label>
-                        <label for="cat"><input type="checkbox" id="cat" value="cat">Cat</label>
-                        <label for="axolotl"><input type="checkbox" id="axolotl" value="axolotl">Axolotl</label>
-                        <label for="sparklemuffin"><input type="checkbox" id="sparklemuffin" value="sparklemuffin">Sparklemuffin</label>
-                    </div>
-
-                    <hr class="px30">
-
-                    <!-- Radio buttons -->
-                    <div>
-                        <h4>* If you did <i><u>not</u></i> select 'Dog' as an answer, Why?:</h4>
-                        <hr class="px5">
-                        <label for="allergic"><input type="radio" id="allergic" name="reason">I'm allergic</label>
-                        <label for="allergic2"><input type="radio" id="allergic2" name="reason">I have a loved one who is allergic</label><br><br>&emsp;
-                        <label for="afraid"><input type="radio" id="afraid" name="reason">I'm afraid of dogs</label>&emsp;
-                        <label for="pain"><input type="radio" id="pain" name="reason">I hate happiness</label><br><br>&emsp;
-                        <label for="other"><input type="radio" id="other" name="reason">Other</label>&emsp;
-                    </div>
-
-                    <hr class="px30">
-
-                    <!-- Drop down (Select) item -->
-                    <div>
-                        <h4>* Choose a favorite Sci-Fi series:</h4>
-                        
-                        <select name="scifi-series" id="scifi-series" size="1" required>
-                            <option value="star wars">Star Wars</option>
-                            <option value="star trek">Star Trek</option>
-                            <option value="harry potter">Harry Potter</option>
-                            <option value="alien">Alien</option>
-                            <option value="dr who">Dr. Who</option>
-                            <option value="lotr">Lord of The Rings</option>
-                        </select>
-
-                    </div>
-
-                    <hr class="px30">
-
-
-                    <!-- Submit button -->
-                    <input type="submit" value="Sign Up" class="submit-btn">
-                    <hr class="px5">
-
-                </div>
-
-                <hr class="px30">
-            </form>
-            <hr class="px10">
-            
-
-
-        </main>  
+            <br />
+            <br />
 
             <!-- Footer -->
             <footer class="page-footer">
@@ -148,12 +130,14 @@
                         </a>
                     </div>
 
+
                     <!-- LinkedIn -->
                     <div class="linkedin-link">
                         <a href="https://www.linkedin.com/in/kyle-ward-b11786192/" target="_blank">
                         <h4><i class="icon-linkedin-sign icon-3x"></i>Linkedin</h4>
                         </a>
                     </div>
+
 
                     <!-- Code Camp -->
                     <div class="codecamp-link">
@@ -162,12 +146,14 @@
                         </a>
                     </div>
 
+
                     <!-- Github Pages -->
                     <div class="github-pages-link">
                         <a href="https://kyleward0525.github.io/ITIS3135" target="_blank">
                         <h4><i class="icon-github-alt icon-2x"></i>GitHub Pages</h4>
                         </a>
                     </div>
+
 
                     <!-- UNCC Web page -->
                     <div class="uncc-pages-link">
@@ -176,7 +162,7 @@
                         </a>
                     </div>
 
-                            <!-- Validators ? -->
+                    <!-- Validators ? -->
                     <a href="https://validator.w3.org/check?uri=referer" class="validator">
                         <img src="https://dvonbri1.github.io/itis3135/images/button-valid-html5.gif" width="85" height="30" alt="HTML validator">
                     </a>
@@ -186,11 +172,15 @@
                     </a>
 
                 </div>
+                            
+                </div>
 
             </footer>
 
             
 
+        </main>
 
     </body>
+
 </html>
