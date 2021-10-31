@@ -1,10 +1,17 @@
 /* Create color pallete for entire site */
 :root {
     --primary-color: #0a0a0a;
-    --secondary-color: #df0d03;
-    --tertiary-color: #f7f9fd;
+    --secondary-color: #0ba313;
+    --tertiary-color: #535252c4;
     --accent-color: #629ac8;
+    --nav-color: rgb(144, 52, 231);
     font-family: 'Merriweather', serif;
+}
+
+body {
+    background-color: aliceblue;
+    color:rgb(63, 58, 58);
+    text-shadow: 0px 0px 2px var(--nav-color);
 }
 
 /* PAGE HEADER */
