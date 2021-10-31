@@ -8,10 +8,12 @@
     font-family: 'Merriweather', serif;
 }
 
+/*  PAGE BODY   */
 body {
     background-color: aliceblue;
     color:rgb(63, 58, 58);
     text-shadow: 0px 0px 2px var(--nav-color);
+    width: 99%;
 }
 
 /* PAGE HEADER */
@@ -73,10 +75,7 @@ a {
     text-decoration: none;
 }
 
-/*  PAGE BODY   */
-body {
-    width: 99%;
-}
+
 
 /*  PAGE FOOTER */ 
 .page-footer {
@@ -140,6 +139,8 @@ a:visited {
     margin-left: 15%;
     width: 70%;
     height: 20%;
+    color: whitesmoke;
+    text-shadow: 0px 0px 2px var(--primary-color);
 }
 
 .table-header {
@@ -183,6 +184,11 @@ tbody tr:nth-child(odd) td
 	background-color: rgb(169, 66, 253);
 }
 
+tbody tr:nth-child(even) td:not(.salary) 
+{
+	color: var(--nav-color);
+}
+
 th.lbl-wages {
     padding-right: 16%;
 }
@@ -211,6 +217,8 @@ th.lbl-wages {
     background-color: rgb(95, 13, 172);
     width: 50%;
     margin-left: 25%;
+    color: whitesmoke;
+    text-shadow: 0px 0px 2px var(--primary-color);
 }
 
 .input-form {
@@ -404,6 +412,9 @@ section {
     font-weight: 140;
 }
 
+.ord-list {
+    line-height: 2;
+}
 
 /* Text Styling */
 .txt16px {
