@@ -36,6 +36,13 @@ function validateEntry(number)
         return false;
     }
     
+    // Check if number is a float
+    if(number !== parseInt(number, 10))
+    {
+        // Cast number to an int
+        return false;
+    }
+
     //  Check if number is in range
     if ((number >= min) && (number <= max))
     {
@@ -75,6 +82,14 @@ function getShape()
 {
     //  Get number from user and display alert
     let userNum = promptUserForNum();
+
+    //  Last-ditch effort to protect against input errors
+    if(!(userNum in prefixes))
+    {
+        alert("ERROR: " + userNum + " is not between 0 and 10. Setting default (8)...");
+        userNum = 8;
+    }
+
     alert("Polygon name: " + (prefixes[userNum] + suffix));
 
     //  Set polygon DOM element
