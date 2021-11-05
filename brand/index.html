@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Katari-Wolf Home</title>
+        <meta name="description" content="Web App for ITIS 3135">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/design.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>  <!-- jQuery-->
+        <script src="scripts/brand.js"></script>
+    </head>
+
+
+    <body onload="loadPage('Home')">
+        <!-- Page Header -->
+        <div id="header"></div>
+
+        <hr class="px30">
+
+        <!-- Main body of the page -->
+        <main>
+            <h1 class="section-title">Home</h1>
+            <hr width="10%">
+
+            <hr class="px20">
+
+            <!-- Nav buttons -->
+            <div class="container" id="btn-container">
+                <label for="contact"><input type="button" class="nav-btn" id="contact-btn" value="Get In Contact" onclick="redirect('contact.html')"></label>
+                <label for="brand"><input type="button" class="nav-btn" id="brand-btn" value="Learn More About Katari-Wolf" onclick="redirect('brand-katari-wolf.html')"></label>
+                <label for="apps"><input type="button" class="nav-btn" id="apps-btn" value="See our FREE apps"></label>
+            </div>
+
+            
+        </main>
+        
+        <hr class="px200"><hr class="px200"><hr class="px50">
+        
+        <!-- Page Footer -->
+        <div id="footer"></div>
+
+    </body>
+
+</html>

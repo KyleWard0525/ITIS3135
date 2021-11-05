@@ -1,0 +1,257 @@
+/* Create color pallete for entire page */
+:root {
+    --primary-color: #221f1f;
+    --secondary-color: #df0d03;
+    --tertiary-color: #e5edfd;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+footer {
+    position: sticky;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+input[type='textarea'] {
+    border-style: solid;
+    border: 1px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:visited {
+    color: var(--primary-color);
+}
+
+input[type="button"]:hover, input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+/* Line breaks */
+hr.px5 {
+    height: 5px;
+    visibility: hidden;
+}
+
+hr.px10 {
+    height: 10px;
+    visibility: hidden;
+}
+
+hr.px20 {
+    height: 20px;
+    visibility: hidden;
+}
+
+hr.px30 {
+    height: 30px;
+    visibility: hidden;
+}
+
+hr.px50 {
+    height: 50px;
+    visibility: hidden;
+}
+
+hr.px200 {
+    height: 200px;
+    visibility: hidden;
+}
+
+
+/* Section styling */
+.section-title {
+    text-align: center;
+}
+
+.section-text {
+    line-height: 2.5; 
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.margin-pct5 {
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.margin-pct10 {
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.margin-pct20 {
+    margin-left:20%;
+    margin-right:20%;
+}
+
+.margin-pct30 {
+    margin-left:30%;
+    margin-right: 30%;
+}
+
+.margin-pct35x10
+{
+    margin-left: 35%;
+    margin-right: 10%;
+}
+
+
+.txt24px {
+    font-size: 24px;
+}
+
+/* List styling */
+.colx2-list {
+    display: block;
+    list-style-type: none;
+}
+
+.col-left {
+    margin-left: 15%;
+}
+
+.col-right {
+    margin-left: 60%;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+
+#title {
+    display: inline-block;
+    margin-left: 48%;
+    text-align: center;
+    font-size: 32px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container#btn-container {
+    width: 100vw;
+    height: 35vh;
+    position: absolute;
+    display: inline-block;
+}
+
+.nav-btn {
+    padding: 20px;
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 8%;
+    margin-right: 3%;
+    background-color: transparent;
+    border-color: var(--secondary-color);
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 3px;
+    font-size: 24px;
+    box-shadow: 0px 0px 2px var(--primary-color);
+    text-shadow: 0px 0px 2px var(--tertiary-color);
+}
+
+.nav-btn:hover {
+    background-color:var(--primary-color);
+    color: var(--tertiary-color);
+}
+
+
+.kw-form {
+    overflow: hidden;
+    display: flexbox;
+    width: 65vw;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    justify-content: center;
+    padding-bottom: 15px;
+    border: var(--secondary-color);
+    border-style: solid;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+}
+
+.kw-form:not(.form-title) {
+    font-size: 18px;
+    text-shadow: 0px 0px 6px var(--secondary-color);
+}
+
+.kw-form input:focus {
+    border: var(--secondary-color);
+    border-style: solid;
+    border-radius: 2px;
+    
+}
+
+.kw-form label {
+    display: inline;
+}
+
+.txt-box {
+    border: var(--tertiary-color);
+    border-style: solid;
+    border-radius: 1px;
+    box-shadow: 0px 0px 6px var(--secondary-color);
+}
+
+#email-box, #name-box {
+    height: 33px;
+    width: 250px;
+    margin:auto;
+}
+
+#msg-box {
+    display: flex;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+    margin: 0;
+    resize: none;
+    width: auto;
+    margin: auto;
+}
+
+.nav-btn#contact-submit {
+    display: flex;
+    margin: auto;
+    width: auto;
+    color: aliceblue;
+    opacity: 0.7;
+}
+.nav-btn#contact-submit:hover {
+    width: auto;
+    color: var(--tertiary-color);
+    opacity: 1;
+}
+
+#form-response {
+    display: block;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10%;
+    font-size: 32px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Katari-Wolf Contact</title>
+        <meta name="description" content="Web App for ITIS 3135">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/design.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>  <!-- jQuery-->
+        <script src="scripts/brand.js"></script>
+    </head>
+
+
+    <body onload="loadPage()">
+        <!-- Page Header -->
+        <div id="header"></div>
+
+        <hr class="px50">
+
+        <!-- Main body of the page -->
+        <main id="main">
+            <h1 class="section-title" id="title">Contact Us</h1>
+            <hr width="10%">
+
+            <hr class="px50">
+
+            <!-- Contact form -->
+            <form class="kw-form" id="contact-form" onSubmit="return submitForm()" method="GET">
+                <hr class="px10">
+                <h2 class="form-title" id="contact-title">Send us a message</h2>
+                <hr class="px20">
+
+                <label for="name">Name: &emsp;&emsp;<input type="text" class="txt-box" id="name-box" placeholder="Enter your name here" required/></label>
+                <hr class="px10">
+                <label for="email">Email: &emsp;&emsp;<input type="email" class="txt-box" id="email-box" placeholder="Enter your email here" required/></label>
+                <hr class="px30">
+                <label for="usr-msg">Have a question or concern? Let us know:</label>
+                <hr class="px5">
+                <textarea cols="100" rows="20" class="txt-box" id="msg-box" required></textarea>
+                <hr class="px10">
+
+                <input type="submit" class="nav-btn" id="contact-submit" value="Send Message">
+            </form>
+            <hr class="px20">
+        </main>
+        <hr class="px50">
+
+        <!-- Footer -->
+        <div id="footer"></div>
+    </body>
+
+</html>
