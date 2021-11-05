@@ -4,7 +4,7 @@
 
 
 //  Load page resources
-function loadPage(title)
+function loadPage()
 {
     // Wait for html to load
     $(window).ready(function() 
@@ -24,13 +24,17 @@ function redirect(page)
 //  Handle submission of contact form
 function submitForm()
 {
+    // Get input from form
+    let name = document.getElementById("name-box").value;
+    let email = document.getElementById("email-box").value;
+
     // Remove form from page 
     document.getElementById("main").remove();
     
     // Add message to page
     let msg = document.createElement("h3");
     msg.setAttribute("id", "form-response");
-    msg.textContent = "Thank you for your feedback!";
+    msg.textContent = "Thank you, " + name + " for your feeback! We will review it carefully and send a reply to " + email;
 
     document.getElementById("header").append(msg);
 }
