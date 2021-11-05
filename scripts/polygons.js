@@ -69,6 +69,7 @@ function promptUserForNum()
     if(!validateEntry(userInt))
     {
         alert("Error: Number must be between 0 and 10!");
+        userInput = '0';
         promptUserForNum();
     }
     else {
