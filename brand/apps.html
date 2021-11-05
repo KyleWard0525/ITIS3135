@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Kyle Ward ITIS 3135 Katari-Wolf</title>
+        <title>Katari-Wolf Apps</title>
         <meta name="description" content="Web App for ITIS 3135">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,50 +10,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/design.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>  <!-- jQuery-->
+        <script src="scripts/brand.js"></script>
     </head>
 
 
-    <body>
+    <body onload="loadPage()">
         <!-- Page Header -->
-        <header>
-        <div id="page-header">
-            <h3><img src="images/brand-icon/katari-wolf(original).png" height="120" width="150" alt="kw-icon"> Katari-Wolf Technology</h3>
-        </div>
-    </header>
-
+        <div id="header"></div>
         <hr class="px50">
 
         <!-- Main body of the page -->
         <main>
-            <h1 class="section-title">Katari-Wolf</h1>
-            <hr width="10%">
+            <h1 class="section-title">Click to download any of our FREE software apps</h1>
+            <hr width="30%">
 
             
+
+            <div class="container" id="btn-container">
+                <label for="doge"><a href="components/Apps/Doge.rar" download="Doge.rar"><input type="button" class="nav-btn" id="doge-btn" value="Doge for Desktop" onclick=""></a></label>
+                <label for="ghbot"><a href="components/Apps/GHBot.rar" download="GuitarHeroBot.rar"><input type="button" class="nav-btn" id="ghbot-btn" value="Guitar Hero Bot" onclick=""></a></label>
+                <label for="owen"><a href="components/Apps/Owen.rar" download="Owen.rar"><input type="button" class="nav-btn" id="owen-btn" value="Owen" onclick=""></label></a>
+                <label for="restart"><a href="components/Apps/Restart.rar" download="Restart.rar"><input type="button" class="nav-btn" id="restart-btn" value="Restart" onclick=""></a></label>
+                <label for="termvel"><a href="components/Apps/TerminalVelocity.rar" download="TerminalVelocity.rar"><input type="button" class="nav-btn" id="termvel-btn" value="TerminalVelocity" onclick=""></a></label>
+                <label for="beep"><a href="components/Apps/Beep.rar" download="Beep.rar"><input type="button" class="nav-btn" id="beep-btn" value="Beep" onclick=""></label></a>
+            </div>
 
         </main>
         
-        <hr class="px50">
-        <hr/>
+        <hr class="px200"><hr class="px200"><hr class="px200">
+        
         
 
         <!-- Footer -->
-        <footer class="center ">
-            <br />
-            <p><b><i>&copy; Katari-Wolf Technology 2021</b></i></p>
-            
-            <a href="#page-header" class="top-link">Back to Top</a>
-            <br />
-            <br />
-        </footer>
-
-        <!-- Validators -->
-        <a href="https://validator.w3.org/check?uri=referer" class="validator">
-            <img src="https://dvonbri1.github.io/itis3135/images/button-valid-html5.gif" width="85" height="30" alt="HTML validator">
-        </a>
-
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" class="validator">
-            <img src="https://dvonbri1.github.io/itis3135/images/button-valid-css.gif" width="85" height="30" alt="CSS validator">
-        </a>
+        <div id="footer"></div>
 
     </body>
 
