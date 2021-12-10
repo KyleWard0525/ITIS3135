@@ -1,0 +1,11 @@
+* Add side tab to each page to as navbar
+    - Shows all pages but only enables the one the user has visited (via local storage most likely)
+
+* Check if user has lost the game
+    - If so, store in local storage and redirect all pages to "No longer considered" page
+
+* Another puzzle?
+
+* Another step after application submission?
+    - Maybe send user an email to the next stage
+
